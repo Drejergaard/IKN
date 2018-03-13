@@ -9,7 +9,7 @@ BUFSIZE = 1000
 
 def main(argv):
     #creating an INET an streaming socket
-	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     #bind to the HOST id and port 9000
     sock.bind((HOST, PORT))
