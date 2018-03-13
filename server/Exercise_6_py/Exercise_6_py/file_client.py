@@ -10,7 +10,7 @@ def main(argv):
     clisock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     #checks if input is correct
-    if len(argv == 2):
+    if len(argv) == 2:
         serv = argv[0]
         msg = argv[1]
     else:
