@@ -19,7 +19,9 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="file_client.py" />
+    <Compile Include="..\..\..\Documents\Git filer\IKN\server\Exercise_6_py%284%29\Exercise_6_py\file_client.py">
+      <Link>file_client.py</Link>
+    </Compile>
     <Compile Include="file_server.py" />
     <Compile Include="lib.py" />
   </ItemGroup>
