@@ -7,14 +7,14 @@ PORT = 9000
 BUFSIZE = 1000
 
 def main(argv):
-	clisock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    clisock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     #checks if input is correct
     if len(argv == 2):
         serv = argv[0]
         msg = argv[1]
     else:
-        print("Formatet skal være <server IP> <sti/Filnavn>")
+        print("Formatet skal vaere <server IP> <sti/Filnavn>")
         sys.exit()
     
     #client connects to server
