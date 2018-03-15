@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UDP_server", "UDP_server\UDP_server.pyproj", "{72AE333C-22C0-4592-B2BD-6D5345EC61A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72AE333C-22C0-4592-B2BD-6D5345EC61A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AE333C-22C0-4592-B2BD-6D5345EC61A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C748A877-E43A-41FD-9DE9-047D7ECAC65D}
+	EndGlobalSection
+EndGlobal
