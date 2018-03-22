@@ -22,16 +22,16 @@ def main(argv):
     print("Connection til server etableret")
     
     #writes the filename t the server
-    writeTextTCP(msg, clisock)
+    Lib.writeTextTCP(msg, clisock)
 
     #gets the filsize
-    size = getFileSizeTCP(clisock)
+    size = Lib.getFileSizeTCP(clisock)
     print("filstorelsen er: {}".format(size))
     dataread = 0
 
     #checks if the file exsists and if it does it starts receiving the file
     if size > 0:
-        filename = extractFilename(msg)
+        filename = Lib.extractFilename(msg)
         print("Filnavnet er: {}".format(msg))
 
         file = open(filename, 'wb')
