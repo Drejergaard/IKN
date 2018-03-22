@@ -4,8 +4,8 @@ import socket
 HOST_IP = "10.0.0.1"
 PORT = 9000
 BUFSIZE = 2048
-UP = /proc/uptime
-LOAD = /proc/loadavg
+UP = "/proc/uptime"
+LOAD = "/proc/loadavg"
 
 def main(argv):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
