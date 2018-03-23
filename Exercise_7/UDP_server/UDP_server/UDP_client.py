@@ -8,7 +8,7 @@ BUFSIZE = 2048
 def main(argv):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-    sock.bind((HOST_IP, PORT))
+    sock.connect((HOST_IP, PORT))
     print("Server socket opened")
 
     while True:

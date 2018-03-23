@@ -12,8 +12,6 @@ def main(argv):
 
     sock.bind((HOST_IP, PORT))
 
-    #sock.listen(5)
-
     print ("Server socket opened.\n")
 
     while True:
