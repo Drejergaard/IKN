@@ -13,7 +13,7 @@ def main(argv):
 
     while True:
 
-        message = input("If you wish to know the uptime, please write u or U. If you wich to know the average loadtime, please write l or L: ")
+        message = raw_input("If you wish to know the uptime, please write u or U. If you wich to know the average loadtime, please write l or L: ")
 
         if message == "close":
             print("closing socket")
