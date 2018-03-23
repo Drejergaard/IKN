@@ -1,7 +1,7 @@
 import sys
 import socket
 
-HOST_IP = "10.0.0.1"
+HOST_IP = '10.0.0.1'
 PORT = 9000
 BUFSIZE = 2048
 
