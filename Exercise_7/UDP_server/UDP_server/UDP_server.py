@@ -1,9 +1,9 @@
 import sys
 import socket
 
+
 HOST_IP = '10.0.0.1'
 PORT = 9000
-BUFSIZE = 2048
 UP = "/proc/uptime"
 LOAD = "/proc/loadavg"
 
@@ -16,24 +16,24 @@ def main(argv):
 
     while True:
         print ("waiting to receive a message.\n")
-        data, address = sock.recvfrom(BUFSIZE)
+        data, address = sock.recvfrom()
 
         print ("received %s bytes from %s" % (len(data), address))
 
         print (data)
 
         if data == 'U' or data == 'u':
-            file = open(UP, 'r')
-            filedata = file.read(BUFSIZE)
+            file = open(UP)
+            filedata = file.read()
 
             sent = sock.sendto(filedata, address)
             print ("sent %s bytes back to %s" % (sent, address))
 
         elif data == 'L' or data == 'l':
-            file = open(LOAD, 'r')
-            filedata = file.read(BUFSIZE)
+            file = open(LOAD)
+            filedata = file.read()
 
-            sent = sock.sendto(data, address)
+            sent = sock.sendto(filedata, address)
             print ("sent %s bytes back to %s" % (sent, address))
 
 

@@ -8,8 +8,8 @@ BUFSIZE = 2048
 def main(argv):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-    sock.connect((HOST_IP, PORT))
-    print("Server socket opened")
+    #sock.connect((HOST_IP, PORT))
+    #print("Server socket opened")
 
     while True:
 
@@ -23,7 +23,7 @@ def main(argv):
             sent = sock.sendto(message, (HOST_IP, PORT))
 
             print("Waiting to recieve\n")
-            data, server = sock.recvfrom(BUFSIZE)
+            data, server = sock.recvfrom()
 
             if message == 'U' or message == 'u':
                 print("The uptime is: %s\n" % data)
