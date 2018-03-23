@@ -23,7 +23,7 @@ def main(argv):
             sent = sock.sendto(message, (HOST_IP, PORT))
 
             print("Waiting to recieve\n")
-            data, server = sock.recvfrom()
+            data, server = sock.recvfrom(BUFSIZE)
 
             if message == 'U' or message == 'u':
                 print("The uptime is: %s\n" % data)
