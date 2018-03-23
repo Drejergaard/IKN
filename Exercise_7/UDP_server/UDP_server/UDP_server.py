@@ -37,3 +37,7 @@ def main(argv):
 
             sent = sock.sendto(data, address)
             print ("sent %s bytes back to %s" % (sent, address))
+
+
+if __name__ == "__main__":
+    main(sys.argv)

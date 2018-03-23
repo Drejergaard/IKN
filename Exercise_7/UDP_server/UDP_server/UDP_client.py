@@ -31,6 +31,9 @@ def main(argv):
             elif message == 'L' or message == 'l':
                 print("The loadaverage is: %s\n" % data)
 
+
+if __name__ == "__main__":
+    main(sys.argv)
     
 
 
