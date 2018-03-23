@@ -26,7 +26,7 @@ def main(argv):
         print("connection from {} achieved".format(addr))
 
         #reads the message from the client
-        msg = readTextTCP(clisock)
+        msg = Lib.readTextTCP(clisock)
 
         print("received following message: {} ".format(msg))
 
@@ -38,13 +38,13 @@ def main(argv):
             sys.exit()
 
         #checks if the file exists and returns the size of the file, if it doesn't exist it returns 0
-        size = check_File_Exists(msg)
+        size = Lib.check_File_Exists(msg)
 
         if size > 0:
             print("The size of the file is: {} bit".format(size))
             #converts the size of the file to a string and sends it to the client
             returnmsg = str(size)
-            writeTextTCP(returnmsg, clisock)
+            Lib.writeTextTCP(returnmsg, clisock)
 
             #opens the requested file
             file = open(msg, 'rb')
@@ -61,7 +61,7 @@ def main(argv):
             print("The file doesn't exist")
             #converts the size of the file to a string and sends it to the client
             returnmsg = str(size)
-            writeTextTCP(returnmsg, clisock)
+            Lib.writeTextTCP(returnmsg, clisock)
 
 
         clisock.close()
