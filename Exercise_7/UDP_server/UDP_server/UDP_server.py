@@ -34,7 +34,7 @@ def main(argv):
             file = open(LOAD)
             filedata = file.read(BUFSIZE)
 
-            sent = sock.sendto(data, address)
+            sent = sock.sendto(filedata, address)
             print ("sent %s bytes back to %s" % (sent, address))
 
 
