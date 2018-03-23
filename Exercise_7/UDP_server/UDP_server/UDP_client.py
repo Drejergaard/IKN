@@ -20,7 +20,7 @@ def main(argv):
             sock.close()
         else:
             print("sending %s\n" % message)
-            sent = sock. sendto(message, HOST_IP)
+            sent = sock.sendto(message, (HOST_IP, PORT))
 
             print("Waiting to recieve\n")
             data, server = sock.recvfrom(BUFSIZE)
