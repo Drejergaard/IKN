@@ -13,11 +13,13 @@ def main(argv):
 
     while True:
 
-        message = raw_input("If you wish to know the uptime, please write u or U. If you wich to know the average loadtime, please write l or L: ")
+        message = raw_input("If you wish to know the uptime, please write u or U.\n", \
+                            "If you wish to know the average loadtime, please write l or L.\n", \
+                            "If you wish to close the client, please write close: ")
 
         if message == "close":
             print("closing socket")
-            sock.close()
+            exit()
         else:
             print("sending %s\n" % message)
             sent = sock.sendto(message, (HOST_IP, PORT))
